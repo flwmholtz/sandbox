@@ -1,0 +1,3 @@
+[submodule "Wiki"]
+	path = Wiki
+	url = git@github.com:capcomvertigo/sandbox.wiki.git
