@@ -1,0 +1,17 @@
+{
+    "authors": [
+        {
+            "email": "mholtz@capcom.com",
+            "name": "Mark Holtz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "name": "mholtz/sandbox",
+    "require": {
+        "phpunit/phpunit": "dev-master",
+        "silex/silex": "v1.1.0",
+        "slim/slim": "dev-master"
+    },
+    "require-dev": {
+    }
+}

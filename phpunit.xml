@@ -1,0 +1,123 @@
+<phpunit	
+	colors="true"
+	backupGlobals="true"	
+	backupStaticAttributes="false"
+	verbose="true"
+	debug="true"
+	processIsolation="false"
+
+
+>
+
+<!-- 
+	cacheTokens="false"
+	colors="false"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	forceCoversAnnotation="false"
+	mapTestClassNameToCoveredClassName="false"
+	printerClass="PHPUnit_TextUI_ResultPrinter"
+	printerFile="/path/to/ResultPrinter.php"
+	processIsolation="false"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnIncomplete="false"
+	stopOnSkipped="false"
+	testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+	testSuiteLoaderFile="/path/to/StandardTestSuiteLoader.php"
+	strict="false"
+	verbose="false"
+ -->
+ 
+<testsuites>
+ 
+	<testsuite name="Base">
+		<file>test/base/test.env.php</file>
+	</testsuite>
+<!--	<testsuite name="Env">
+		<file>test/env/test.env.unix.php</file>
+		<file>test/env/test.env.ini.php</file>
+		<file>test/env/test.env.php</file>
+	</testsuite>
+	<testsuite name="Loader">
+		<file>test/loader/test.loader.php</file>
+	</testsuite>
+	<testsuite name="Log">
+		<file>test/log/test.logger.1.php</file>
+		<file>test/log/test.logger.2.php</file>
+		<file>test/log/test.logger.3.php</file>
+	</testsuite>
+	<testsuite name="Callback">
+		<file>test/callback/test.callback.1.php</file>
+	</testsuite>
+	<testsuite name="Functions">
+		<file>test/stream/test.arrays.php</file>
+	</testsuite>	
+	<testsuite name="Format">
+		<file>test/format/plist/test.reader.php</file>
+		<file>test/format/ini/test.parser.php</file>
+	</testsuite>
+	<testsuite name="Object">
+		<file>test/object/test.singleton.php</file>
+		<file>test/object/test.tracked.php</file>
+	</testsuite>
+	<testsuite name="Curl">
+		<file>test/curl/test.curl.1.php</file>
+		<file>test/curl/test.curl.2.php</file>
+		<file>test/curl/test.curl.3.php</file>
+		<file>test/curl/test.curl.4.php</file>
+		<file>test/curl/test.curl.5.php</file>
+	</testsuite>
+	<testsuite name="Stream">
+		<file>test/stream/test.stream.MongoFS.php</file>
+		<file>test/stream/test.stream.VariableStream.php</file>
+	</testsuite>
+ -->
+</testsuites>
+<groups>
+<!-- 
+  <include>
+    <group>name</group>
+  </include>
+  <exclude>
+    <group>name</group>
+  </exclude>
+ -->
+</groups>
+<logging>
+<!-- 
+	<log type="json"			target="info/phpunit.log.json" />
+	<log type="coverage-html"	target="info/phpunit.coverage.html" showUncoveredFiles="true" />
+	<log type="testdox-html"	target="info/phpunit.testdox.html" />
+	<log type="testdox-text"	target="info/phpunit.testdox.txt" />
+	<log type="coverage-php"	target="info/phpunit.coverage.php" />
+ -->
+</logging>
+
+<php>
+	<!--<ini name="error_log" value="info/test.stderr" /> -->
+
+	<ini name="flwcore.ecosystem" value="testing" />
+	<ini name="flwcore.basedir" value="../lib.php-core-classes" />
+	<ini name="flwcore.loadlibs" value="" />
+	<!-- <ini name="auto_prepend_file" value="bootstrap.php" /> -->
+<!-- 
+	<ini name="flwcore.log_target" value="php://stderr" />
+ -->
+	
+<!-- 
+  <includePath>.</includePath>
+  <ini name="foo" value="bar"/>
+  <const name="foo" value="bar"/>
+  <var name="foo" value="bar"/>
+  <env name="foo" value="bar"/>
+  <post name="foo" value="bar"/>
+  <get name="foo" value="bar"/>
+  <cookie name="foo" value="bar"/>
+  <server name="foo" value="bar"/>
+  <files name="foo" value="bar"/>
+  <request name="foo" value="bar"/>
+ -->
+</php>
+</phpunit>
